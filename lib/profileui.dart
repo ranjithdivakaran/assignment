@@ -80,11 +80,84 @@ class Profileui extends StatelessWidget {
                   style: TextStyle(color: Colors.black),
                 ),
               ),
-              SingleChildScrollView()
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Privacy"),
+                          leading: Icon(Icons.privacy_tip),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),SizedBox(height: 20,),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Purchase history"),
+                          leading: Icon(Icons.history),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),SizedBox(height: 20,),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Help & Support"),
+                          leading: Icon(Icons.help),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),SizedBox(height: 20,),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Settings"),
+                          leading: Icon(Icons.settings),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),SizedBox(height: 20,),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Invite a friend"),
+                          leading: Icon(Icons.insert_invitation),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),
+                      SizedBox(height: 20,),
+                      Container(
+                        decoration: BoxDecoration(color: Colors.grey[400],
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        width: 300,
+                        child: ListTile(
+                          title: Text("Log out"),
+                          leading: Icon(Icons.logout),
+                          trailing: Icon(Icons.arrow_forward_ios_sharp),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
-
       ),
     );
   }
