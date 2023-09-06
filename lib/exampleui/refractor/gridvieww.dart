@@ -27,6 +27,7 @@ class Gridd extends StatelessWidget {
         gridDelegate:
             SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         itemBuilder: (context, index) => Card(
+          elevation: 10,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
