@@ -30,7 +30,6 @@ class Musicplayer extends StatelessWidget {
           ),
             width: double.infinity,
             height: 40,
-           // color: Colors.white70,
             child: TextField(
               decoration: InputDecoration(
                   hintText: "search...", suffixIcon: Icon(Icons.search)),
